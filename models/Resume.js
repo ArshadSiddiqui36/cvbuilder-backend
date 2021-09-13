@@ -8,6 +8,7 @@ const resumeSchema = new Schema({
     position: String,
     email: String,
     mobile: String,
+    website: String,
     address: String,
     skills: String,
     linkedin: String,

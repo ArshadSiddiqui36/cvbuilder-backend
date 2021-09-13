@@ -48,6 +48,7 @@ app.post("/resume", async(req, res) => {
       position: req.body.position,
       email: req.body.email,
       mobile: req.body.mobile,
+      website: req.body.website,
       address: req.body.address,
       skills: req.body.skills,
       linkedin: req.body.linkedin,
