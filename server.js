@@ -29,9 +29,9 @@ app.use(cors(corsOptions))
 app.use('/api/users', userRoute);
 
 
-app.use(express.static("dist/angularjwtauth/"));
+app.use(express.static("dist/client/"));
 if(process.env.NODE_ENV =='production') {
-  app.use(express.static("dist/angularjwtauth/"));
+  app.use(express.static("dist/client/"));
 }
 
 // simple route
