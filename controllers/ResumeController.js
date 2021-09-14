@@ -2,7 +2,7 @@ const Resume = require('../models/Resume')
 const jwt = require('jsonwebtoken')
 
 exports.resumebuilder = function (req, res) {
-    const {  userid, fullname, position,email,mobile,address,skills,profile,linkedin,facebook,instagram,languages,objective,experience,project,certification,education } = req.body
+    const { userid, fullname, position,email,mobile,address,skills,profile,linkedin,facebook,instagram,languages,objective,experience,project,certification,education } = req.body
 
     Resume.findOne({ email }, function (err, resumeExistingUser) {
       if (err) {
